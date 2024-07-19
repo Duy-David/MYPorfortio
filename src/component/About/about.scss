@@ -1,0 +1,158 @@
+@import "../common/base.scss";
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 88px;
+  margin: 80px 170px;
+  @media (max-width: 768px) {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .about-title {
+    position: relative;
+
+    h1 {
+      padding: 0 30px;
+      font-size: 80px;
+      font-weight: 600;
+      @media (max-width: 768px) {
+        font-size: 50px;
+        padding: 0;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      @media (max-width: 768px) {
+        width: 130px;
+        right: -20px;
+      }
+    }
+  }
+
+  .about-selections {
+    @media (max-width: 768px) {
+      flex-direction: column;
+      display: flex;
+      gap: 80px;
+    }
+    
+
+    .about-left {
+      img {
+        width: 300px;
+        border-radius: 10px;
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .about-right {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      .about-para {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        p {
+        }
+        @media (max-width: 768px) {
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      .about-skills {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .about-skill {
+          display: flex;
+          gap: 50px;
+          align-items: center;
+          transition: all 0.3s;
+          p {
+            min-width: 150px;
+            font-size: 24px;
+            font-weight: 500;
+            @media (max-width: 768px) {
+              font-size: 20px;
+            }
+          }
+          hr {
+            outline: none;
+            border: none;
+            width: 50%;
+            height: 8px;
+            border-radius: 50%;
+            background: $color1;
+            @media (max-width: 768px) {
+            height: 6px;
+            }
+          }
+          &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s;
+          }
+          @media (max-width: 768px) {
+          gap: 20px;
+          align-items: center;
+          }
+        
+        }
+      }
+    }
+  }
+  .about-achievements {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    @media (max-width: 768px) {
+    justify-content: space-between  ;
+    }
+    .about-achievement {
+      @media (max-width: 768px) {
+      gap:10px  
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.12);
+        transition: all 0.5s;
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: 700;
+        background: $color1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: 768px) {
+        font-size: 34px;
+        font-weight: 700 ;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 500;
+        @media (max-width: 768px) {
+        text-align: center;
+        font-size: 16px;
+        }
+      }
+    }
+    hr {
+    }
+  }
+}

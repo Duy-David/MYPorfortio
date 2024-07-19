@@ -1,0 +1,86 @@
+@import "../common/base.scss";
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  img {
+    margin-top: 150px;
+    @media (max-width: 768px) {
+      margin-top: 120px;
+      width: 260px;
+    }
+  }
+  h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 70px;
+    @media (max-width: 768px) {
+      margin-top: 50px;
+      width: 90%;
+      font-size: 50px;
+    }
+    span {
+      background: $color1;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    @media (max-width: 768px) {
+      margin: 10px 0;
+      width: 60%;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  .hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    @media (max-width: 768px) {
+      gap: 16px;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+    .hero-connect {
+      padding: 20px 30px;
+      border-radius: 50px;
+      background: $color1;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        border: 2px solid #ffff;
+      }
+      @media (max-width: 768px) {
+        padding: 20px 30px;
+        border-radius: 40px;
+      }
+    }
+    .hero-resume {
+      padding: 20px 55px;
+      border-radius: 50px;
+      border: 2px solid #ffff;
+      cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        border-color: #b415ff;
+      }
+      @media (max-width: 768px) {
+        padding: 20px 50px;
+        border-radius: 40px;
+      }
+    }
+  }
+}
